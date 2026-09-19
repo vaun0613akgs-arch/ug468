@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tiếp tục</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #071321;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.card {
+    width: 92%;
+    max-width: 460px;
+
+    background: #11213b;
+    padding: 32px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.25);
+}
+
+.title {
+    font-size: 30px;
+    line-height: 1.25;
+
+    font-weight: 900;
+
+    margin: 0 0 28px;
+
+    text-shadow:
+        2px 2px 0 #a94442;
+
+    color: white;
+}
+
+.continue-btn {
+    display: block;
+
+    width: 100%;
+
+    padding: 17px 20px;
+
+    border: none;
+    border-radius: 40px;
+
+    background: #4169ef;
+
+    color: white;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px rgba(65,105,239,.30);
+
+    transition: transform .15s ease;
+}
+
+.continue-btn:active {
+    transform: scale(.97);
+}
+
+.description {
+    text-align: center;
+
+    margin-top: 17px;
+
+    font-size: 15px;
+
+    color: #d7dfeb;
+}
+
+.footer {
+    text-align: center;
+
+    color: #8da2c5;
+
+    margin-top: 20px;
+
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+
+    .card {
+        padding: 25px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .continue-btn {
+        font-size: 24px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="title">
+        BẠN ĐANG VÀO<br>
+        CÂY 🐓 CHÚ BA CỌP <br>
+        
+    </div>
+
+    <button
+        class="continue-btn"
+        onclick="goToWebsite()">
+        TIẾP TỤC
+    </button>
+
+    <div class="description">
+        Bạn cần tích tiếp tục để vào kênh.
+    </div>
+
+    <div class="footer">
+        © 2026 Thế Giới Giải Trí
+    </div>
+
+</div>
+
+<script>
+
+function goToWebsite() {
+
+    window.location.href = "https://ug339.net";
+
+}
+
+</script>
+
+</body>
+</html>
